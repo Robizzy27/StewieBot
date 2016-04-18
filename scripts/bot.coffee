@@ -20,7 +20,7 @@ module.exports = (robot) ->
     "Your skin has the texture of a decorative autumn squash."
   ]
 
-  robot.respond /insult me/i, (res) ->
+  robot.respond /insult/i, (res) ->
     res.reply res.random insults
 
   robot.respond /insult @?([\w .\-]+)\?*$/i, (res) ->
